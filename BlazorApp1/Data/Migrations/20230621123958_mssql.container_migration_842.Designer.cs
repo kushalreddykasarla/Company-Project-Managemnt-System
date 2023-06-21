@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorApp1.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230621083138_mssql.container_migration_192")]
-    partial class mssqlcontainer_migration_192
+    [Migration("20230621123958_mssql.container_migration_842")]
+    partial class mssqlcontainer_migration_842
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,19 +54,19 @@ namespace BlazorApp1.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "5b3be2fb-7666-41c4-af23-7f6ab581f775",
+                            Id = "41fdb937-95b8-4959-9773-dd2d121736b8",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "26c050ba-a16a-42ad-a00b-0afb84660c97",
+                            Id = "9e7804f2-438a-4d2e-8df8-1a3c008fd72b",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "534cc853-d3ea-427f-8931-4c856081771d",
+                            Id = "e73fd275-0757-49db-b3a9-ad5ca04cbac0",
                             Name = "SubAdmin",
                             NormalizedName = "SUBADMIN"
                         });
