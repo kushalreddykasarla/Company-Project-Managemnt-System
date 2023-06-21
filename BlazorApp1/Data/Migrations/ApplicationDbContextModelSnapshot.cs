@@ -51,19 +51,19 @@ namespace BlazorApp1.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "2568708b-6599-4c28-8f82-79b767e769c5",
+                            Id = "5b3be2fb-7666-41c4-af23-7f6ab581f775",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "d356cf09-1c68-477c-87f4-127edda641cd",
+                            Id = "26c050ba-a16a-42ad-a00b-0afb84660c97",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "4ca6e892-8615-4644-a8bc-c4f65824c229",
+                            Id = "534cc853-d3ea-427f-8931-4c856081771d",
                             Name = "SubAdmin",
                             NormalizedName = "SUBADMIN"
                         });
