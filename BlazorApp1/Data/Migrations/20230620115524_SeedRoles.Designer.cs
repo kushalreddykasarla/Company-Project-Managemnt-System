@@ -4,6 +4,7 @@ using BlazorApp1.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorApp1.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230620115524_SeedRoles")]
+    partial class SeedRoles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,19 +54,19 @@ namespace BlazorApp1.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "41fdb937-95b8-4959-9773-dd2d121736b8",
+                            Id = "2568708b-6599-4c28-8f82-79b767e769c5",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "9e7804f2-438a-4d2e-8df8-1a3c008fd72b",
+                            Id = "d356cf09-1c68-477c-87f4-127edda641cd",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "e73fd275-0757-49db-b3a9-ad5ca04cbac0",
+                            Id = "4ca6e892-8615-4644-a8bc-c4f65824c229",
                             Name = "SubAdmin",
                             NormalizedName = "SUBADMIN"
                         });
